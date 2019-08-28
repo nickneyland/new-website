@@ -1,0 +1,30 @@
+/*------------------------------------*\
+  #CONTACT STYLES
+\*------------------------------------*/
+
+form {
+    width: 50%;
+    background: lightblue;
+    padding: rem(30px);
+    p {
+        margin-bottom: rem(20px);
+        &.hidden {
+            display: none;
+        }
+    }
+    input,
+    textarea {
+        font-size: rem(16px);
+        border: 0;
+        box-shadow: none;
+        padding: rem(10px);
+    }
+    input {
+        width: 400px;
+        height: 30px;
+    }
+    textarea {
+        width: 400px;
+        height: 200px;
+    }
+}
