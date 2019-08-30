@@ -25,8 +25,8 @@ export default ({ children }) => (
         <footer>
            <p>&copy; <span id="year"></span> Nick Neyland</p>
            <ul>
-                <li><a href="https://github.com/nickneyland" target="_blank">Github</a></li>
-                <li><a href="https://twitter.com/nickneyland" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/nickneyland" target="_blank" rel="noopener noreferrer">Github</a></li>
+                <li><a href="https://twitter.com/nickneyland" target="_blank" rel="noopener noreferrer">Twitter</a></li>
             </ul>
         </footer>
         <Helmet>
