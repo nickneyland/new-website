@@ -2,22 +2,85 @@
   #HEADER STYLES
 \*------------------------------------*/
 
+html,
+body,
+#gatsby-focus-wrapper,
+#___gatsby {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-shrink: 0;
     align-items: center;
     padding: rem(40px);
+    background: lightblue;
+    @include breakpoint (phone) {
+        flex-direction: column;
+    }
     h1 {
         font-size: rem(35px);
+        color: #fff;
         text-transform: uppercase;
+        @include breakpoint (phone) {
+            font-size: rem(30px);
+            margin-bottom: rem(10px);
+        }
     }
     ul {
         display: flex;
+        flex-direction: row;
+        @include breakpoint (phone) {
+            flex-direction: column;
+            align-items: center;
+        }
         li {
             margin-right: 1rem;
+            @include breakpoint (phone) {
+                margin-right: 0;
+                margin-bottom: rem(10px);
+            }
             &:last-child {
                 margin-right: 0;
+            }
+            a {
+                font-size: rem(18px);
+                color: #fff;
+                &:before,
+                &:after {
+                    display: inline-block;
+                    opacity: 0;
+                    transition: transform 0.3s, opacity 0.2s;
+                }
+                &:before {
+                    content: '{';
+                    transform: translateX(20px);
+                    margin-left: rem(10px);
+                }
+                &:after {
+                    content: '}';
+                    transform: translateX(-20px);
+                    margin-right: rem(10px);
+                }
+                &:hover::before {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+                &:hover::after {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
             }
         }
     }

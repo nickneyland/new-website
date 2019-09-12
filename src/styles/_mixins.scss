@@ -3,6 +3,33 @@
 \*------------------------------------*/
 
 /*------------------------------------*\
+  #BREAKPOINTS
+\*------------------------------------*/
+
+ @mixin breakpoint($point) {
+  @if $point == desktop {
+     @media (max-width: 1445px) { @content ; }
+  }
+  @if $point == laptop {
+     @media (max-width: 1280px) { @content ; }
+  }
+   @if $point == tablet {
+     @media (max-width: 1039px) { @content ; }
+  }
+   @if $point == portrait_tablet {
+     @media (max-width: 1023px) { @content ; }
+  }
+   @if $point == landscape_phone {
+     @media only screen and (min-width: 375px) and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) { @content ; }
+  }
+   @else if $point == phone {
+     @media (max-width: 639px) { @content ; }
+  }
+}
+
+
+
+/*------------------------------------*\
   #PX TO REM
 \*------------------------------------*/
 
@@ -119,14 +146,13 @@ ul {
 
 a {
     text-decoration: none;
-    &:visited {
-      color: blue;
-    }
+    color: maroon;
 }
 
 p {
   font-size: rem(16px);
   line-height: 25px;
+  margin-bottom: rem(15px);
   &.year {
     font-size: rem(20px);
     padding: rem(20px 0);
@@ -143,3 +169,9 @@ strong {
   padding: rem(20px 0);
 }
 
+img {
+  width: auto;
+  @include breakpoint (phone) {
+      width: 100%;
+    }
+}

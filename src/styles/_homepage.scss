@@ -3,9 +3,31 @@
 \*------------------------------------*/
 
 .container {
+	flex-grow: 1;
+	@include breakpoint (tablet) {
+		padding: 2.5rem 1rem;
+	}
   #typedtext {
-    font-family: 'aucznik_1303_plusregular';
-    font-size: rem(75px);
-    color: #000;
+  	padding: rem(40px 0);
+  	@include breakpoint (tablet) {
+		padding: rem(20px 0);
+	}
+  	h1 {
+	    font-family: 'aucznik_1303_plusregular';
+	    font-size: rem(75px);
+	    color: #000;
+	    @include breakpoint (tablet) {
+			font-size: rem(45px);
+	    }
+	    @include breakpoint (phone) {
+			font-size: rem(30px);
+	    }
+	    a {
+	    	color: lightblue;
+	    }
+	    span {
+	    	display: block;
+	    }
+	}
   }
 }
