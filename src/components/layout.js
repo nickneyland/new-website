@@ -1,6 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 import { Link } from "gatsby"
+import favicon from '../components/images/favicon.png'
 const ListLink = props => (
     <Link to={props.to}>{props.children}</Link>
 )
@@ -10,6 +11,7 @@ export default ({ children }) => (
             <title>Nick Neyland</title>
             <meta name="title" content="Nick Neyland" />
             <link rel="canonical" href="https://nickneyland.com" />
+            <link rel="icon" href={favicon} />
             <meta name="description" content="Personal website of web developer and writer Nick Neyland." />
         </Helmet>
         <header>
