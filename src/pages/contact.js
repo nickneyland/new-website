@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 export default () => (
     <Layout>
         <div className="container">
-        <form name="contact" method="POST" data-netlify-recaptcha="true" netlify-honeypot="bot-field" data-netlify="true">
+        <form name="contact" method="post" data-netlify-recaptcha="true" netlify-honeypot="bot-field" data-netlify="true">
             <p>Contact me using the form below. Thanks!</p>
             <p className="hidden">
             <label>Don’t fill this out if you're human: <input name="bot-field" /></label>

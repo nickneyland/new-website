@@ -20,7 +20,6 @@ export default ({ children }) => (
                 <li><ListLink to="/about">About</ListLink></li>
                 <li><ListLink to="/coding">Coding</ListLink></li>
                 <li><ListLink to="/writing">Writing</ListLink></li>
-                <li><ListLink to="/contact">Contact</ListLink></li>
             </ul>
         </header>
         {children}
