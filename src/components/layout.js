@@ -33,6 +33,7 @@ export default ({ children }) => (
             <ul className="right-footer">
                 <li><a href="https://github.com/nickneyland" target="_blank" rel="noopener noreferrer">Github</a></li>
                 <li><a href="https://twitter.com/nickneyland" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/nick-neyland/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </ul>
         </footer>
     </div>
