@@ -16,6 +16,9 @@ footer {
     }
     ul {
         display: flex;
+        @include breakpoint (tablet) {
+            flex-direction: column;
+        }
         &.left-footer {
             display: block;
             @include breakpoint (tablet) {
@@ -30,6 +33,10 @@ footer {
         }
         li {
             margin-right: 1rem;
+            @include breakpoint (tablet) {
+                margin-right: 0;
+                margin-bottom: rem(10px);
+            }
             &:last-child {
                 margin-right: 0;
             }
