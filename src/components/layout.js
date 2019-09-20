@@ -28,7 +28,7 @@ export default ({ children }) => (
         <footer>
             <ul className="left-footer">
                 <li>Site built with <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">gatsby.js</a></li>
-                <li>&copy; 2019 Nick Neyland</li>
+                <li>&copy; {new Date().getFullYear()} Nick Neyland</li>
             </ul>
             <ul className="right-footer">
                 <li><a href="https://github.com/nickneyland" target="_blank" rel="noopener noreferrer">Github</a></li>
