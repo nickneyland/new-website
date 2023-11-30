@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
-export default () => (
+
+const contactPage = () => (
     <Layout>
         <div className="container">
         <form name="contact" method="post" data-netlify-recaptcha="true" netlify-honeypot="bot-field" data-netlify="true">
@@ -26,3 +27,5 @@ export default () => (
         </div>
     </Layout>
 )
+
+export default contactPage

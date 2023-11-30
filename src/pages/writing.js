@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
-export default () => (
+
+const writingPage = () => (
     <Layout>
         <div className="container">
             <p>My writing has featured in the Wall Street Journal, the BBC, Pitchfork, Red Bull Music Academy, the New York Press, Drowned in Sound, CMJ, and many others.</p>
@@ -525,3 +526,5 @@ export default () => (
         </div>
     </Layout>
 )
+
+export default writingPage

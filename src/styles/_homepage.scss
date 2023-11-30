@@ -14,8 +14,9 @@
 	}
   	h1 {
 	    font-family: 'aucznik_1303_plusregular';
-	    font-size: rem(75px);
+	    font-size: rem(35px);
 	    color: #000;
+		margin-bottom: 15px;
 	    @include breakpoint (tablet) {
 			font-size: rem(45px);
 	    }
@@ -28,6 +29,9 @@
 	    span {
 	    	display: block;
 	    }
+	}
+	p {
+		font-size: rem(25px)
 	}
   }
 }
